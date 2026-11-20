@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+venv/
+uv.lock
+
+# Dataset (downloaded automatically, not part of the submission)
+data/
+
+# Archives
+*.zip
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# NOTE: models/, onnx_models/, results/, logs/ and REPORT.md are deliberately
+# NOT ignored: the assignment requires them in the GitHub repo.
