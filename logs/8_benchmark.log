@@ -1,0 +1,41 @@
+CPU: Intel(R) Xeon(R) CPU @ 2.00GHz   latency threads: 1   accuracy pass on: cuda
+  teacher_resnet50             acc  76.08%  lat   48.50 ms  size  90.74 MB  mem  100.7 MB
+  mobilenetv2_baseline         acc  71.98%  lat   13.20 ms  size   9.22 MB  mem   11.1 MB
+    ONNX                       acc  71.98%  lat    3.20 ms  agreement with PyTorch 100.00%
+  mobilenetv2_kd               acc  74.71%  lat   15.71 ms  size   9.22 MB  mem   11.1 MB
+    ONNX                       acc  74.71%  lat    2.97 ms  agreement with PyTorch 100.00%
+  squeezenet_baseline          acc  62.16%  lat    6.78 ms  size   3.04 MB  mem    3.6 MB
+    ONNX                       acc  62.16%  lat    0.90 ms  agreement with PyTorch 100.00%
+  squeezenet_kd                acc  54.91%  lat    4.54 ms  size   3.04 MB  mem    3.6 MB
+    ONNX                       acc  54.91%  lat    0.71 ms  agreement with PyTorch 100.00%
+  efficientnet_lite0_baseline  acc  72.29%  lat   16.68 ms  size  13.62 MB  mem   15.5 MB
+    ONNX                       acc  72.29%  lat    3.86 ms  agreement with PyTorch 100.00%
+  efficientnet_lite0_kd        acc  75.33%  lat   11.83 ms  size  13.62 MB  mem   15.5 MB
+    ONNX                       acc  75.33%  lat    3.96 ms  agreement with PyTorch 100.00%
+  nas_best                     acc  90.67%  lat    4.60 ms  size   1.27 MB  mem    2.5 MB
+    ONNX                       acc  90.67%  lat    0.79 ms  agreement with PyTorch 100.00%
+
+                      model      runtime  dataset  accuracy_%   params  macs_M  size_mb  peak_mem_mb  latency_b1_ms  throughput_img_s
+          ResNet-50 teacher      PyTorch cifar100       76.08 23705252 1298.01    90.74       100.66          48.50             22.86
+       MobileNetV2 baseline      PyTorch cifar100       71.98  2351972   88.09     9.22        11.08          13.20            193.59
+             MobileNetV2 KD      PyTorch cifar100       74.71  2351972   88.09     9.22        11.08          15.71            185.28
+        SqueezeNet baseline      PyTorch cifar100       62.16   776740   24.25     3.04         3.64           6.78            647.19
+              SqueezeNet KD      PyTorch cifar100       54.91   776740   24.25     3.04         3.64           4.54            926.67
+EfficientNet-Lite0 baseline      PyTorch cifar100       72.29  3499108  115.66    13.62        15.48          16.68            145.48
+      EfficientNet-Lite0 KD      PyTorch cifar100       75.33  3499108  115.66    13.62        15.48          11.83            167.65
+                   NAS best      PyTorch  cifar10       90.67   315354   24.81     1.27         2.48           4.60            553.05
+       MobileNetV2 baseline ONNX Runtime cifar100       71.98     <NA>     NaN     8.96          NaN           3.20            333.11
+             MobileNetV2 KD ONNX Runtime cifar100       74.71     <NA>     NaN     8.96          NaN           2.97            323.47
+        SqueezeNet baseline ONNX Runtime cifar100       62.16     <NA>     NaN     2.97          NaN           0.90           1815.58
+              SqueezeNet KD ONNX Runtime cifar100       54.91     <NA>     NaN     2.97          NaN           0.71           1821.37
+EfficientNet-Lite0 baseline ONNX Runtime cifar100       72.29     <NA>     NaN    13.31          NaN           3.86            264.75
+      EfficientNet-Lite0 KD ONNX Runtime cifar100       75.33     <NA>     NaN    13.31          NaN           3.96            265.21
+                   NAS best ONNX Runtime  cifar10       90.67     <NA>     NaN     1.20          NaN           0.79           1185.17
+
+Knowledge distillation summary:
+           student               arch  params  baseline_acc_%  kd_acc_%  kd_gain_pts  baseline_wrong_kd_right  baseline_right_kd_wrong  mcnemar_p significant_p<0.05  baseline_agree_teacher_%  kd_agree_teacher_%
+       MobileNetV2        mobilenetv2 2351972          71.980    74.710        2.730                      855                      582      0.000                yes                    76.000              83.070
+        SqueezeNet         squeezenet  776740          62.160    54.910       -7.250                      664                     1389      0.000                yes                    65.320              58.300
+EfficientNet-Lite0 efficientnet_lite0 3499108          72.290    75.330        3.040                      862                      558      0.000                yes                    75.820              84.350
+
+CSV files and plots written to /content/Assignment-4/results/

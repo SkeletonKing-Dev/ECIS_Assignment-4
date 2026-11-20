@@ -1,0 +1,95 @@
+{
+  "config": {
+    "resolution": 32,
+    "stem_channels": 32,
+    "head_channels": 0,
+    "stages": [
+      {
+        "channels": 24,
+        "depth": 2,
+        "activation": "relu",
+        "blocks": [
+          {
+            "type": "mbconv3",
+            "kernel": 3
+          },
+          {
+            "type": "mbconv3",
+            "kernel": 7
+          }
+        ]
+      },
+      {
+        "channels": 32,
+        "depth": 1,
+        "activation": "relu",
+        "blocks": [
+          {
+            "type": "mbconv3",
+            "kernel": 7
+          }
+        ]
+      },
+      {
+        "channels": 64,
+        "depth": 3,
+        "activation": "hswish",
+        "blocks": [
+          {
+            "type": "mbconv3",
+            "kernel": 7
+          },
+          {
+            "type": "dwsep",
+            "kernel": 7
+          },
+          {
+            "type": "dwsep",
+            "kernel": 7
+          }
+        ]
+      },
+      {
+        "channels": 128,
+        "depth": 2,
+        "activation": "silu",
+        "blocks": [
+          {
+            "type": "mbconv3",
+            "kernel": 5
+          },
+          {
+            "type": "mbconv6",
+            "kernel": 5
+          }
+        ]
+      }
+    ]
+  },
+  "arch": "R32 s32 | 24x2 relu [mb3k3,mb3k7] | 32x1 relu [mb3k7] | 64x3 hswish [mb3k7,dsk7,dsk7] | 128x2 silu [mb3k5,mb6k5] | h0",
+  "search_id": 63,
+  "val_acc_proxy": 72.02,
+  "metrics": {
+    "params": 315354.0,
+    "macs_M": 24.805632,
+    "size_mb": 1.2715826034545898,
+    "latency_ms": 4.656279966548027,
+    "peak_mem_mb": 2.481475830078125
+  },
+  "constraints": {
+    "max_latency_ms": 6.0,
+    "max_size_mb": 2.0,
+    "max_mem_mb": 6.0
+  },
+  "search": {
+    "budget_trained": 30,
+    "candidates_total": 80,
+    "rejected": 46,
+    "population": 10,
+    "tournament": 3,
+    "proxy_epochs": 4,
+    "proxy_train_images": 20000,
+    "search_time_min": 11.249712328116098,
+    "space_size": 9404832794764640256
+  }
+}

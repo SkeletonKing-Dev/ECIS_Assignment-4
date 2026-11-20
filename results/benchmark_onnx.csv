@@ -1,0 +1,8 @@
+model,key,dataset,resolution,runtime,accuracy_%,size_mb,latency_b1_ms,latency_b1_p95_ms,throughput_img_s,agreement_with_pytorch_%
+MobileNetV2 baseline,mobilenetv2_baseline,cifar100,32,ONNX Runtime,71.9800,8.9566,3.2026,4.8394,333.1141,100.0000
+MobileNetV2 KD,mobilenetv2_kd,cifar100,32,ONNX Runtime,74.7100,8.9566,2.9719,3.3225,323.4679,100.0000
+SqueezeNet baseline,squeezenet_baseline,cifar100,32,ONNX Runtime,62.1600,2.9679,0.8954,1.2055,1815.5786,100.0000
+SqueezeNet KD,squeezenet_kd,cifar100,32,ONNX Runtime,54.9100,2.9679,0.7137,0.9131,1821.3710,100.0000
+EfficientNet-Lite0 baseline,efficientnet_lite0_baseline,cifar100,32,ONNX Runtime,72.2900,13.3146,3.8622,4.6200,264.7497,100.0000
+EfficientNet-Lite0 KD,efficientnet_lite0_kd,cifar100,32,ONNX Runtime,75.3300,13.3146,3.9596,6.2643,265.2050,100.0000
+NAS best,nas_best,cifar10,32,ONNX Runtime,90.6700,1.2033,0.7918,0.8966,1185.1747,100.0000

@@ -1,0 +1,4 @@
+student,arch,params,baseline_acc_%,kd_acc_%,kd_gain_pts,baseline_wrong_kd_right,baseline_right_kd_wrong,mcnemar_p,significant_p<0.05,baseline_agree_teacher_%,kd_agree_teacher_%
+MobileNetV2,mobilenetv2,2351972,71.9800,74.7100,2.7300,855,582,0.0000,yes,76.0000,83.0700
+SqueezeNet,squeezenet,776740,62.1600,54.9100,-7.2500,664,1389,0.0000,yes,65.3200,58.3000
+EfficientNet-Lite0,efficientnet_lite0,3499108,72.2900,75.3300,3.0400,862,558,0.0000,yes,75.8200,84.3500

@@ -57,7 +57,7 @@ run_q1() {
 run_q2() {
   echo "== 4. Hardware-aware evolutionary NAS on CIFAR-10 =="
   $PY src/nas_search.py --budget $NAS_BUDGET --population $NAS_POP --proxy-epochs $NAS_EP \
-      --proxy-train-images $NAS_IMG $FAKE | tee logs/4_nas_search.log
+      --proxy-train-images $NAS_IMG --max-latency-ms 6 $FAKE | tee logs/4_nas_search.log
   echo "== 5. Train best NAS architecture from scratch =="
   $PY src/nas_train_best.py --epochs $BEST_EP $FAKE | tee logs/5_nas_train_best.log
 }

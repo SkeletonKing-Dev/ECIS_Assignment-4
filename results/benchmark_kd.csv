@@ -1,0 +1,8 @@
+model,key,dataset,resolution,runtime,accuracy_%,params,macs_M,size_mb,peak_mem_mb,latency_b1_ms,latency_b1_p95_ms,throughput_img_s,compression_vs_teacher_x,speedup_vs_teacher_x
+ResNet-50 teacher,teacher_resnet50,cifar100,32,PyTorch,76.0800,23705252,1298.0142,90.7394,100.6627,48.4971,56.1197,22.8561,1.0000,1.0000
+MobileNetV2 baseline,mobilenetv2_baseline,cifar100,32,PyTorch,71.9800,2351972,88.0916,9.2188,11.0763,13.2011,18.4042,193.5894,10.0789,3.6737
+MobileNetV2 KD,mobilenetv2_kd,cifar100,32,PyTorch,74.7100,2351972,88.0916,9.2170,11.0763,15.7094,22.9620,185.2779,10.0789,3.0871
+SqueezeNet baseline,squeezenet_baseline,cifar100,32,PyTorch,62.1600,776740,24.2483,3.0430,3.6419,6.7788,8.5141,647.1876,30.5189,7.1542
+SqueezeNet KD,squeezenet_kd,cifar100,32,PyTorch,54.9100,776740,24.2483,3.0421,3.6419,4.5375,6.4842,926.6735,30.5189,10.6880
+EfficientNet-Lite0 baseline,efficientnet_lite0_baseline,cifar100,32,PyTorch,72.2900,3499108,115.6552,13.6211,15.4824,16.6803,20.3440,145.4756,6.7747,2.9074
+EfficientNet-Lite0 KD,efficientnet_lite0_kd,cifar100,32,PyTorch,75.3300,3499108,115.6552,13.6185,15.4824,11.8317,14.4920,167.6487,6.7747,4.0989

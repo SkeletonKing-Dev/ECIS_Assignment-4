@@ -1,0 +1,104 @@
+Device: cuda
+Teacher loaded: test accuracy 76.08%
+
+=== KD mobilenetv2: 2,351,972 student parameters, 2,725,888 adapter parameters (training only) ===
+    T=4.0  alpha=0.9  beta=2.0  mode=both
+[mobilenetv2 KD] epoch   1/30  loss 17.4899  train 3.61%  test 6.00%  (1.0 min)  | CE 4.421  KD 12.092  feat 3.083  agree-w-teacher 3.6%
+[mobilenetv2 KD] epoch   2/30  loss 13.2468  train 10.75%  test 11.94%  (1.7 min)  | CE 3.906  KD 9.863  feat 1.990  agree-w-teacher 10.9%
+[mobilenetv2 KD] epoch   3/30  loss 11.3005  train 19.59%  test 19.77%  (2.4 min)  | CE 3.445  KD 8.220  feat 1.779  agree-w-teacher 19.8%
+[mobilenetv2 KD] epoch   4/30  loss 9.5870  train 29.32%  test 28.97%  (3.2 min)  | CE 2.975  KD 6.772  feat 1.597  agree-w-teacher 29.6%
+[mobilenetv2 KD] epoch   5/30  loss 8.0849  train 39.12%  test 41.22%  (3.9 min)  | CE 2.514  KD 5.503  feat 1.440  agree-w-teacher 39.5%
+[mobilenetv2 KD] epoch   6/30  loss 7.0141  train 45.88%  test 47.88%  (4.6 min)  | CE 2.192  KD 4.628  feat 1.315  agree-w-teacher 46.3%
+[mobilenetv2 KD] epoch   7/30  loss 6.3365  train 50.61%  test 50.99%  (5.3 min)  | CE 1.982  KD 4.097  feat 1.226  agree-w-teacher 51.1%
+[mobilenetv2 KD] epoch   8/30  loss 5.9550  train 53.15%  test 35.28%  (6.1 min)  | CE 1.853  KD 3.778  feat 1.185  agree-w-teacher 53.7%
+[mobilenetv2 KD] epoch   9/30  loss 5.8601  train 53.72%  test 57.03%  (6.8 min)  | CE 1.835  KD 3.719  feat 1.165  agree-w-teacher 54.4%
+[mobilenetv2 KD] epoch  10/30  loss 4.9901  train 59.62%  test 58.20%  (7.5 min)  | CE 1.535  KD 3.014  feat 1.062  agree-w-teacher 60.3%
+[mobilenetv2 KD] epoch  11/30  loss 5.0206  train 59.60%  test 59.23%  (8.2 min)  | CE 1.550  KD 3.063  feat 1.054  agree-w-teacher 60.2%
+[mobilenetv2 KD] epoch  12/30  loss 4.5785  train 62.64%  test 60.90%  (9.0 min)  | CE 1.395  KD 2.718  feat 0.996  agree-w-teacher 63.5%
+[mobilenetv2 KD] epoch  13/30  loss 4.2340  train 65.64%  test 10.17%  (9.7 min)  | CE 1.265  KD 2.445  feat 0.954  agree-w-teacher 66.5%
+[mobilenetv2 KD] epoch  14/30  loss 4.3763  train 65.16%  test 63.50%  (10.4 min)  | CE 1.293  KD 2.522  feat 0.989  agree-w-teacher 65.9%
+[mobilenetv2 KD] epoch  15/30  loss 3.9519  train 67.97%  test 66.09%  (11.2 min)  | CE 1.159  KD 2.219  feat 0.919  agree-w-teacher 68.8%
+[mobilenetv2 KD] epoch  16/30  loss 3.6991  train 70.10%  test 64.95%  (11.9 min)  | CE 1.051  KD 2.015  feat 0.890  agree-w-teacher 71.0%
+[mobilenetv2 KD] epoch  17/30  loss 3.7115  train 70.40%  test 64.64%  (12.6 min)  | CE 1.058  KD 2.029  feat 0.890  agree-w-teacher 71.3%
+[mobilenetv2 KD] epoch  18/30  loss 3.3439  train 73.03%  test 67.55%  (13.3 min)  | CE 0.931  KD 1.769  feat 0.829  agree-w-teacher 74.0%
+[mobilenetv2 KD] epoch  19/30  loss 3.1362  train 74.80%  test 69.03%  (14.1 min)  | CE 0.851  KD 1.620  feat 0.797  agree-w-teacher 75.8%
+[mobilenetv2 KD] epoch  20/30  loss 3.0178  train 76.15%  test 69.51%  (14.8 min)  | CE 0.798  KD 1.530  feat 0.781  agree-w-teacher 77.2%
+[mobilenetv2 KD] epoch  21/30  loss 2.8830  train 77.28%  test 70.42%  (15.5 min)  | CE 0.746  KD 1.430  feat 0.761  agree-w-teacher 78.3%
+[mobilenetv2 KD] epoch  22/30  loss 2.7363  train 78.72%  test 70.94%  (16.3 min)  | CE 0.695  KD 1.321  feat 0.739  agree-w-teacher 79.7%
+[mobilenetv2 KD] epoch  23/30  loss 2.6097  train 80.42%  test 72.18%  (17.0 min)  | CE 0.632  KD 1.213  feat 0.727  agree-w-teacher 81.5%
+[mobilenetv2 KD] epoch  24/30  loss 2.4680  train 82.05%  test 72.71%  (17.7 min)  | CE 0.576  KD 1.118  feat 0.702  agree-w-teacher 83.1%
+[mobilenetv2 KD] epoch  25/30  loss 2.3587  train 83.03%  test 73.23%  (18.4 min)  | CE 0.539  KD 1.036  feat 0.686  agree-w-teacher 84.1%
+[mobilenetv2 KD] epoch  26/30  loss 2.2681  train 84.33%  test 73.59%  (19.2 min)  | CE 0.499  KD 0.963  feat 0.676  agree-w-teacher 85.4%
+[mobilenetv2 KD] epoch  27/30  loss 2.1904  train 85.26%  test 74.19%  (19.9 min)  | CE 0.464  KD 0.900  feat 0.667  agree-w-teacher 86.4%
+[mobilenetv2 KD] epoch  28/30  loss 2.1343  train 85.99%  test 74.44%  (20.6 min)  | CE 0.441  KD 0.854  feat 0.661  agree-w-teacher 87.1%
+[mobilenetv2 KD] epoch  29/30  loss 2.0925  train 86.63%  test 74.52%  (21.3 min)  | CE 0.418  KD 0.819  feat 0.657  agree-w-teacher 87.7%
+[mobilenetv2 KD] epoch  30/30  loss 2.0805  train 86.76%  test 74.71%  (22.1 min)  | CE 0.410  KD 0.809  feat 0.655  agree-w-teacher 87.9%
+mobilenetv2 KD final test accuracy: 74.71%  -> /content/Assignment-4/models/student_mobilenetv2_kd_cifar100.pth  (adapters discarded)
+
+=== KD squeezenet: 776,740 student parameters, 1,316,864 adapter parameters (training only) ===
+    T=4.0  alpha=0.9  beta=2.0  mode=both
+[squeezenet KD] epoch   1/30  loss 17.1839  train 1.27%  test 1.08%  (0.5 min)  | CE 4.619  KD 13.097  feat 2.467  agree-w-teacher 1.3%
+[squeezenet KD] epoch   2/30  loss 16.2195  train 1.15%  test 1.07%  (0.9 min)  | CE 4.673  KD 13.103  feat 1.980  agree-w-teacher 1.1%
+[squeezenet KD] epoch   3/30  loss 17.0766  train 1.05%  test 1.00%  (1.3 min)  | CE 4.722  KD 13.114  feat 2.401  agree-w-teacher 1.0%
+[squeezenet KD] epoch   4/30  loss 17.2282  train 0.95%  test 1.00%  (1.8 min)  | CE 4.709  KD 13.106  feat 2.481  agree-w-teacher 1.0%
+[squeezenet KD] epoch   5/30  loss 16.9936  train 0.93%  test 1.00%  (2.2 min)  | CE 4.700  KD 13.118  feat 2.359  agree-w-teacher 0.9%
+[squeezenet KD] epoch   6/30  loss 16.7201  train 0.94%  test 1.00%  (2.6 min)  | CE 4.697  KD 13.094  feat 2.233  agree-w-teacher 0.9%
+[squeezenet KD] epoch   7/30  loss 16.4497  train 1.20%  test 2.00%  (3.1 min)  | CE 4.674  KD 13.072  feat 2.109  agree-w-teacher 1.2%
+[squeezenet KD] epoch   8/30  loss 15.1573  train 2.99%  test 2.98%  (3.5 min)  | CE 4.462  KD 12.165  feat 1.881  agree-w-teacher 3.0%
+[squeezenet KD] epoch   9/30  loss 13.9552  train 6.04%  test 8.17%  (4.0 min)  | CE 4.218  KD 11.067  feat 1.787  agree-w-teacher 6.1%
+[squeezenet KD] epoch  10/30  loss 13.2512  train 9.43%  test 11.63%  (4.4 min)  | CE 4.043  KD 10.418  feat 1.735  agree-w-teacher 9.5%
+[squeezenet KD] epoch  11/30  loss 12.6697  train 12.31%  test 12.60%  (4.8 min)  | CE 3.908  KD 9.881  feat 1.693  agree-w-teacher 12.5%
+[squeezenet KD] epoch  12/30  loss 12.0590  train 15.38%  test 16.82%  (5.3 min)  | CE 3.758  KD 9.326  feat 1.645  agree-w-teacher 15.5%
+[squeezenet KD] epoch  13/30  loss 11.4486  train 18.22%  test 18.58%  (5.7 min)  | CE 3.602  KD 8.788  feat 1.590  agree-w-teacher 18.3%
+[squeezenet KD] epoch  14/30  loss 10.8975  train 21.33%  test 20.43%  (6.2 min)  | CE 3.470  KD 8.279  feat 1.550  agree-w-teacher 21.5%
+[squeezenet KD] epoch  15/30  loss 10.4208  train 24.43%  test 24.09%  (6.6 min)  | CE 3.327  KD 7.849  feat 1.512  agree-w-teacher 24.7%
+[squeezenet KD] epoch  16/30  loss 9.9685  train 26.90%  test 25.30%  (7.0 min)  | CE 3.200  KD 7.437  feat 1.478  agree-w-teacher 27.1%
+[squeezenet KD] epoch  17/30  loss 9.3434  train 30.13%  test 24.86%  (7.5 min)  | CE 3.016  KD 6.899  feat 1.416  agree-w-teacher 30.4%
+[squeezenet KD] epoch  18/30  loss 8.7543  train 33.45%  test 32.32%  (7.9 min)  | CE 2.848  KD 6.371  feat 1.368  agree-w-teacher 33.8%
+[squeezenet KD] epoch  19/30  loss 8.2892  train 36.66%  test 35.56%  (8.4 min)  | CE 2.692  KD 5.958  feat 1.329  agree-w-teacher 37.0%
+[squeezenet KD] epoch  20/30  loss 7.8685  train 38.91%  test 37.14%  (8.8 min)  | CE 2.560  KD 5.591  feat 1.290  agree-w-teacher 39.4%
+[squeezenet KD] epoch  21/30  loss 7.4804  train 41.44%  test 37.03%  (9.3 min)  | CE 2.439  KD 5.246  feat 1.258  agree-w-teacher 41.9%
+[squeezenet KD] epoch  22/30  loss 7.1336  train 43.89%  test 41.41%  (9.7 min)  | CE 2.314  KD 4.951  feat 1.223  agree-w-teacher 44.3%
+[squeezenet KD] epoch  23/30  loss 6.8155  train 45.94%  test 43.32%  (10.1 min)  | CE 2.202  KD 4.668  feat 1.197  agree-w-teacher 46.5%
+[squeezenet KD] epoch  24/30  loss 6.5251  train 48.23%  test 47.87%  (10.6 min)  | CE 2.091  KD 4.408  feat 1.174  agree-w-teacher 48.7%
+[squeezenet KD] epoch  25/30  loss 6.2797  train 49.79%  test 48.59%  (11.0 min)  | CE 2.004  KD 4.190  feat 1.154  agree-w-teacher 50.4%
+[squeezenet KD] epoch  26/30  loss 5.9928  train 52.20%  test 51.13%  (11.5 min)  | CE 1.902  KD 3.931  feat 1.132  agree-w-teacher 52.8%
+[squeezenet KD] epoch  27/30  loss 5.7819  train 53.85%  test 51.88%  (11.9 min)  | CE 1.810  KD 3.743  feat 1.116  agree-w-teacher 54.4%
+[squeezenet KD] epoch  28/30  loss 5.5860  train 55.41%  test 53.76%  (12.3 min)  | CE 1.730  KD 3.563  feat 1.103  agree-w-teacher 56.0%
+[squeezenet KD] epoch  29/30  loss 5.4523  train 56.43%  test 54.83%  (12.8 min)  | CE 1.668  KD 3.442  feat 1.094  agree-w-teacher 57.1%
+[squeezenet KD] epoch  30/30  loss 5.3706  train 57.27%  test 54.91%  (13.2 min)  | CE 1.637  KD 3.365  feat 1.089  agree-w-teacher 57.9%
+squeezenet KD final test accuracy: 54.91%  -> /content/Assignment-4/models/student_squeezenet_kd_cifar100.pth  (adapters discarded)
+
+=== KD efficientnet_lite0: 3,499,108 student parameters, 2,742,272 adapter parameters (training only) ===
+    T=4.0  alpha=0.9  beta=2.0  mode=both
+[efficientnet_lite0 KD] epoch   1/30  loss 17.3464  train 4.30%  test 6.42%  (1.0 min)  | CE 4.363  KD 11.940  feat 3.082  agree-w-teacher 4.3%
+[efficientnet_lite0 KD] epoch   2/30  loss 13.0151  train 11.82%  test 13.96%  (1.7 min)  | CE 3.867  KD 9.689  feat 1.954  agree-w-teacher 11.9%
+[efficientnet_lite0 KD] epoch   3/30  loss 10.9470  train 21.22%  test 26.57%  (2.5 min)  | CE 3.381  KD 7.911  feat 1.745  agree-w-teacher 21.5%
+[efficientnet_lite0 KD] epoch   4/30  loss 9.2216  train 31.21%  test 28.82%  (3.3 min)  | CE 2.888  KD 6.407  feat 1.583  agree-w-teacher 31.5%
+[efficientnet_lite0 KD] epoch   5/30  loss 8.0281  train 39.56%  test 39.79%  (4.1 min)  | CE 2.516  KD 5.385  feat 1.465  agree-w-teacher 40.0%
+[efficientnet_lite0 KD] epoch   6/30  loss 6.8779  train 46.74%  test 49.45%  (4.8 min)  | CE 2.176  KD 4.506  feat 1.303  agree-w-teacher 47.2%
+[efficientnet_lite0 KD] epoch   7/30  loss 6.2692  train 51.07%  test 48.81%  (5.6 min)  | CE 1.980  KD 4.007  feat 1.233  agree-w-teacher 51.6%
+[efficientnet_lite0 KD] epoch   8/30  loss 5.6932  train 55.08%  test 55.88%  (6.4 min)  | CE 1.780  KD 3.542  feat 1.164  agree-w-teacher 55.7%
+[efficientnet_lite0 KD] epoch   9/30  loss 4.9955  train 59.89%  test 58.82%  (7.1 min)  | CE 1.543  KD 2.995  feat 1.073  agree-w-teacher 60.6%
+[efficientnet_lite0 KD] epoch  10/30  loss 4.6603  train 62.48%  test 60.12%  (7.9 min)  | CE 1.415  KD 2.735  feat 1.029  agree-w-teacher 63.2%
+[efficientnet_lite0 KD] epoch  11/30  loss 4.6558  train 62.88%  test 35.46%  (8.7 min)  | CE 1.414  KD 2.741  feat 1.024  agree-w-teacher 63.7%
+[efficientnet_lite0 KD] epoch  12/30  loss 4.8551  train 61.13%  test 60.71%  (9.5 min)  | CE 1.499  KD 2.909  feat 1.044  agree-w-teacher 61.9%
+[efficientnet_lite0 KD] epoch  13/30  loss 4.1192  train 67.13%  test 64.72%  (10.2 min)  | CE 1.207  KD 2.294  feat 0.967  agree-w-teacher 68.0%
+[efficientnet_lite0 KD] epoch  14/30  loss 3.7575  train 69.66%  test 63.94%  (11.0 min)  | CE 1.076  KD 2.033  feat 0.910  agree-w-teacher 70.6%
+[efficientnet_lite0 KD] epoch  15/30  loss 3.7755  train 70.00%  test 66.52%  (11.8 min)  | CE 1.072  KD 2.054  feat 0.910  agree-w-teacher 70.9%
+[efficientnet_lite0 KD] epoch  16/30  loss 3.4306  train 72.55%  test 67.54%  (12.5 min)  | CE 0.942  KD 1.804  feat 0.857  agree-w-teacher 73.5%
+[efficientnet_lite0 KD] epoch  17/30  loss 3.3637  train 73.44%  test 68.27%  (13.3 min)  | CE 0.916  KD 1.763  feat 0.843  agree-w-teacher 74.3%
+[efficientnet_lite0 KD] epoch  18/30  loss 3.1972  train 74.82%  test 68.02%  (14.1 min)  | CE 0.858  KD 1.643  feat 0.816  agree-w-teacher 75.8%
+[efficientnet_lite0 KD] epoch  19/30  loss 3.0543  train 76.32%  test 69.02%  (14.9 min)  | CE 0.799  KD 1.536  feat 0.796  agree-w-teacher 77.3%
+[efficientnet_lite0 KD] epoch  20/30  loss 2.8356  train 78.24%  test 69.79%  (15.6 min)  | CE 0.720  KD 1.391  feat 0.756  agree-w-teacher 79.2%
+[efficientnet_lite0 KD] epoch  21/30  loss 2.6737  train 80.01%  test 71.98%  (16.4 min)  | CE 0.653  KD 1.269  feat 0.733  agree-w-teacher 81.0%
+[efficientnet_lite0 KD] epoch  22/30  loss 2.6120  train 80.68%  test 71.33%  (17.2 min)  | CE 0.617  KD 1.224  feat 0.725  agree-w-teacher 81.6%
+[efficientnet_lite0 KD] epoch  23/30  loss 2.4430  train 82.70%  test 72.39%  (17.9 min)  | CE 0.554  KD 1.096  feat 0.701  agree-w-teacher 83.8%
+[efficientnet_lite0 KD] epoch  24/30  loss 2.3248  train 84.09%  test 73.94%  (18.7 min)  | CE 0.501  KD 1.006  feat 0.685  agree-w-teacher 85.1%
+[efficientnet_lite0 KD] epoch  25/30  loss 2.2270  train 85.53%  test 74.30%  (19.5 min)  | CE 0.455  KD 0.932  feat 0.671  agree-w-teacher 86.6%
+[efficientnet_lite0 KD] epoch  26/30  loss 2.1363  train 86.59%  test 74.89%  (20.3 min)  | CE 0.418  KD 0.858  feat 0.661  agree-w-teacher 87.7%
+[efficientnet_lite0 KD] epoch  27/30  loss 2.0620  train 87.58%  test 75.20%  (21.0 min)  | CE 0.389  KD 0.800  feat 0.651  agree-w-teacher 88.7%
+[efficientnet_lite0 KD] epoch  28/30  loss 1.9975  train 88.31%  test 75.22%  (21.8 min)  | CE 0.364  KD 0.749  feat 0.643  agree-w-teacher 89.5%
+[efficientnet_lite0 KD] epoch  29/30  loss 1.9639  train 88.90%  test 75.48%  (22.6 min)  | CE 0.346  KD 0.723  feat 0.640  agree-w-teacher 90.0%
+[efficientnet_lite0 KD] epoch  30/30  loss 1.9451  train 89.14%  test 75.33%  (23.4 min)  | CE 0.338  KD 0.706  feat 0.638  agree-w-teacher 90.2%
+efficientnet_lite0 KD final test accuracy: 75.33%  -> /content/Assignment-4/models/student_efficientnet_lite0_kd_cifar100.pth  (adapters discarded)

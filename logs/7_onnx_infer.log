@@ -1,0 +1,49 @@
+
+== ONNX efficientnet_lite0_baseline ==  (cifar100, 32x32, 20.5 ms for 5 images)
+  test[0]      pred: spider          conf 0.246  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.863  true: forest          ok
+  test[2]      pred: beaver          conf 0.623  true: seal            WRONG
+  test[3]      pred: mushroom        conf 1.000  true: mushroom        ok
+  test[4]      pred: sea             conf 0.439  true: sea             ok
+
+== ONNX efficientnet_lite0_kd ==  (cifar100, 32x32, 17.8 ms for 5 images)
+  test[0]      pred: road            conf 0.909  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.991  true: forest          ok
+  test[2]      pred: otter           conf 0.558  true: seal            WRONG
+  test[3]      pred: mushroom        conf 1.000  true: mushroom        ok
+  test[4]      pred: sea             conf 0.900  true: sea             ok
+
+== ONNX mobilenetv2_baseline ==  (cifar100, 32x32, 14.8 ms for 5 images)
+  test[0]      pred: dolphin         conf 0.161  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.977  true: forest          ok
+  test[2]      pred: otter           conf 0.493  true: seal            WRONG
+  test[3]      pred: mushroom        conf 0.482  true: mushroom        ok
+  test[4]      pred: sea             conf 0.990  true: sea             ok
+
+== ONNX mobilenetv2_kd ==  (cifar100, 32x32, 15.3 ms for 5 images)
+  test[0]      pred: road            conf 0.521  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.989  true: forest          ok
+  test[2]      pred: otter           conf 0.602  true: seal            WRONG
+  test[3]      pred: mushroom        conf 1.000  true: mushroom        ok
+  test[4]      pred: sea             conf 0.892  true: sea             ok
+
+== ONNX nas_best ==  (cifar10, 32x32, 4.3 ms for 5 images)
+  test[0]      pred: cat             conf 0.928  true: cat             ok
+  test[1]      pred: ship            conf 1.000  true: ship            ok
+  test[2]      pred: ship            conf 0.987  true: ship            ok
+  test[3]      pred: ship            conf 0.659  true: airplane        WRONG
+  test[4]      pred: frog            conf 1.000  true: frog            ok
+
+== ONNX squeezenet_baseline ==  (cifar100, 32x32, 3.2 ms for 5 images)
+  test[0]      pred: man             conf 0.130  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.850  true: forest          ok
+  test[2]      pred: otter           conf 0.584  true: seal            WRONG
+  test[3]      pred: table           conf 0.116  true: mushroom        WRONG
+  test[4]      pred: sea             conf 0.807  true: sea             ok
+
+== ONNX squeezenet_kd ==  (cifar100, 32x32, 3.4 ms for 5 images)
+  test[0]      pred: road            conf 0.389  true: mountain        WRONG
+  test[1]      pred: forest          conf 0.961  true: forest          ok
+  test[2]      pred: otter           conf 0.471  true: seal            WRONG
+  test[3]      pred: mushroom        conf 0.685  true: mushroom        ok
+  test[4]      pred: sea             conf 0.926  true: sea             ok

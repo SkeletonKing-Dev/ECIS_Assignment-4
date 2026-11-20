@@ -1,0 +1,16 @@
+model,key,dataset,resolution,runtime,accuracy_%,params,macs_M,size_mb,peak_mem_mb,latency_b1_ms,latency_b1_p95_ms,throughput_img_s,agreement_with_pytorch_%
+ResNet-50 teacher,teacher_resnet50,cifar100,32,PyTorch,76.0800,23705252,1298.0142,90.7394,100.6627,48.4971,56.1197,22.8561,
+MobileNetV2 baseline,mobilenetv2_baseline,cifar100,32,PyTorch,71.9800,2351972,88.0916,9.2188,11.0763,13.2011,18.4042,193.5894,
+MobileNetV2 KD,mobilenetv2_kd,cifar100,32,PyTorch,74.7100,2351972,88.0916,9.2170,11.0763,15.7094,22.9620,185.2779,
+SqueezeNet baseline,squeezenet_baseline,cifar100,32,PyTorch,62.1600,776740,24.2483,3.0430,3.6419,6.7788,8.5141,647.1876,
+SqueezeNet KD,squeezenet_kd,cifar100,32,PyTorch,54.9100,776740,24.2483,3.0421,3.6419,4.5375,6.4842,926.6735,
+EfficientNet-Lite0 baseline,efficientnet_lite0_baseline,cifar100,32,PyTorch,72.2900,3499108,115.6552,13.6211,15.4824,16.6803,20.3440,145.4756,
+EfficientNet-Lite0 KD,efficientnet_lite0_kd,cifar100,32,PyTorch,75.3300,3499108,115.6552,13.6185,15.4824,11.8317,14.4920,167.6487,
+NAS best,nas_best,cifar10,32,PyTorch,90.6700,315354,24.8056,1.2745,2.4815,4.6017,4.9511,553.0459,
+MobileNetV2 baseline,mobilenetv2_baseline,cifar100,32,ONNX Runtime,71.9800,,,8.9566,,3.2026,4.8394,333.1141,100.0000
+MobileNetV2 KD,mobilenetv2_kd,cifar100,32,ONNX Runtime,74.7100,,,8.9566,,2.9719,3.3225,323.4679,100.0000
+SqueezeNet baseline,squeezenet_baseline,cifar100,32,ONNX Runtime,62.1600,,,2.9679,,0.8954,1.2055,1815.5786,100.0000
+SqueezeNet KD,squeezenet_kd,cifar100,32,ONNX Runtime,54.9100,,,2.9679,,0.7137,0.9131,1821.3710,100.0000
+EfficientNet-Lite0 baseline,efficientnet_lite0_baseline,cifar100,32,ONNX Runtime,72.2900,,,13.3146,,3.8622,4.6200,264.7497,100.0000
+EfficientNet-Lite0 KD,efficientnet_lite0_kd,cifar100,32,ONNX Runtime,75.3300,,,13.3146,,3.9596,6.2643,265.2050,100.0000
+NAS best,nas_best,cifar10,32,ONNX Runtime,90.6700,,,1.2033,,0.7918,0.8966,1185.1747,100.0000

@@ -1,0 +1,2 @@
+model,key,dataset,resolution,runtime,accuracy_%,params,macs_M,size_mb,peak_mem_mb,latency_b1_ms,latency_b1_p95_ms,throughput_img_s,max_latency_ms,max_size_mb,max_mem_mb,weights_size_mb,meets_constraints
+NAS best,nas_best,cifar10,32,PyTorch,90.6700,315354,24.8056,1.2745,2.4815,4.6017,4.9511,553.0459,6.0000,2.0000,6.0000,1.2716,yes
